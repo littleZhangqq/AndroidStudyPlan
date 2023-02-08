@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e9f4f3"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#c3e1cd">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -23,11 +23,46 @@
             android:textSize="20sp"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/calcuGrid"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="480dp"
+        android:id="@+id/resultView"
+        android:background="#dee0df"
         android:layout_alignParentBottom="true"
-        android:background="@color/white" />
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="bottom|right"
+            android:layout_marginEnd="15dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:id="@+id/resultLabel"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+        <GridView
+            android:id="@+id/channel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:horizontalSpacing="15dp"
+            android:numColumns="4"
+            android:paddingStart="15dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="15dp"
+            android:verticalSpacing="20dp">
+
+        </GridView>
+    </RelativeLayout>
 
 </RelativeLayout>

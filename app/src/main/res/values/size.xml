@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
+
     <macro name="screenWidth">111dp</macro>
+    <macro name="screenHeight">111dp</macro>
 </resources>
