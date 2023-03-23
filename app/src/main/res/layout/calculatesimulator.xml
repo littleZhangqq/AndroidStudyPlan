@@ -4,23 +4,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#c3e1cd">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/toolbar"
         android:background="@color/white"
-        app:navigationIcon="@android:drawable/ic_menu_compass"
-        >
+        app:navigationIcon="@android:drawable/ic_menu_compass">
+
         <TextView
+            android:id="@+id/naviTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="100dp"
-            android:id="@+id/naviTitle"
+            android:singleLine="true"
             android:text="计算器"
             android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:singleLine="true"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout

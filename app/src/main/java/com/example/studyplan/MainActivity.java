@@ -31,7 +31,7 @@ import com.chad.library.adapter.base.listener.OnItemClickListener;
 import Model.News;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private MainAdapter mAdapter;
@@ -81,6 +81,13 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         Intent intent = new Intent(MainActivity.this,CalculateActivity.class);
                         startActivity(intent);
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        Intent intent1 = new Intent(MainActivity.this,
+                                LoginActivity.class);
+                        startActivity(intent1);
                         break;
                 }
 

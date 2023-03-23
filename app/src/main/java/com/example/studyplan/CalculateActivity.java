@@ -27,8 +27,7 @@ import com.google.android.material.navigation.NavigationBarView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalculateActivity extends AppCompatActivity{
-    private CalcuAdapter mAdapter;
+public class CalculateActivity extends BaseActivity{
     private RecyclerView rv;
     public List<String> list = new ArrayList<>();
     private String lastNum;
