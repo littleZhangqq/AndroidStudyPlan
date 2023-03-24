@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#666666"
+        android:text="拍摄照片" />
+
+    <Button
+        android:id="@+id/takealbum"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="#666666"
+        android:text="从相册选取" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#666666"
+        android:text="取消" />
+
+</LinearLayout>

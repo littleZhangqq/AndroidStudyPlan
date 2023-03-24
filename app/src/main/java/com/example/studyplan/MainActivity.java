@@ -83,11 +83,14 @@ public class MainActivity extends BaseActivity {
                         startActivity(intent);
                         break;
                     case 2:
+                        Intent intent2 = new Intent(MainActivity.this,
+                                TakePhoto.class);
+                        startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent1 = new Intent(MainActivity.this,
+                        Intent intent3 = new Intent(MainActivity.this,
                                 LoginActivity.class);
-                        startActivity(intent1);
+                        startActivity(intent3);
                         break;
                 }
 
