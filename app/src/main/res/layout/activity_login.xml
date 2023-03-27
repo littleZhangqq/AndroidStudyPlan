@@ -210,16 +210,4 @@
         android:textColor="#6A6D77"
         android:textSize="13sp" />
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="弹出dialog"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"
-        android:layout_centerHorizontal="true"
-        android:background="@color/purple_200"
-        android:id="@+id/showDialog"
-        />
 </RelativeLayout>

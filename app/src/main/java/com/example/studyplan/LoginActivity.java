@@ -78,8 +78,6 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
             }
         });
 
-        showDialog();
-
         CheckBox checkBox = this.findViewById(R.id.privacyCheck);
         checkBox.setOnCheckedChangeListener(this);
     }
@@ -137,52 +135,6 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
         tv.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-    void showDialog(){
-        TextView button = findViewById(R.id.showDialog);
-        button.setClickable(true);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final SweetDialog dialog =
-                        DialogUtil.openCustomDialog(LoginActivity.this,
-                                R.layout.default_actionsheet, R.style.BottomPushDialogStyle);
-                dialog.setCanceledOnTouchOutside(true);
-                dialog.setCancelable(true);
-                dialog.setOnClickListener(R.id.takephoto,
-                        new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                    }
-                });
-
-                dialog.setOnClickListener(R.id.takealbum,
-                        new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                    }
-                });
-                dialog.show();
-
-                dialog.setOnClickListener(R.id.btn_cancel, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                    }
-                });
-
-                dialog.show();
-//                //默认系统最简单的dialog
-//                Dialog dialog = new Dialog(LoginActivity.this);
-//                dialog.setContentView(R.layout.test_actionsheet);
-//                dialog.setTitle("这是dialog标题");
-//                dialog.setCancelable(true);
-//                dialog.setCanceledOnTouchOutside(true);
-//                dialog.show();
-            }
-        });
-    }
 }
 
 //去掉超链接文字的下划线
