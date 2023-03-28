@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/shape.xml" value="0.1495" />
         <entry key="app/src/main/res/layout/activity_base.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/activity_bottom_list_menu.xml" value="0.22604166666666667" />
+        <entry key="app/src/main/res/layout/activity_handler_test.xml" value="0.2838541666666667" />
         <entry key="app/src/main/res/layout/activity_load_web_view.xml" value="0.25052083333333336" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
@@ -16,6 +17,7 @@
         <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.26458333333333334" />
         <entry key="app/src/main/res/layout/calculategrid.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/calculatesimulator.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/date_select.xml" value="0.27760416666666665" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.22" />
         <entry key="app/src/main/res/layout/shape.xml" value="0.23645833333333333" />
         <entry key="app/src/main/res/layout/test_actionsheet.xml" value="0.24114583333333334" />

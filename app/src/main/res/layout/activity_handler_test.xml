@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HandlerTest">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/white"
+        android:src="@mipmap/anim_1"
+        android:id="@+id/gifImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        android:text="计时器让handler发消息，通过创建handler时写的回调更新UI，相当于调用了iOS的block"
+        android:id="@+id/sendHandler"
+        android:textColor="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#666666"
+        android:hint="输入质数查找范围，默认1000.最大2000"
+        android:id="@+id/inputLoop"
+        android:inputType="number"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="开始计算"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/calcuLoop"/>
+</LinearLayout>

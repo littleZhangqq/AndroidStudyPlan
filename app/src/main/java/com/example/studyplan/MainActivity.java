@@ -42,13 +42,25 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerview);
-        String[] titles = {"总纲-列表应用，跳转，导航设置","计算器-布局-button点击，屏幕适配",
-                "图片浏览器-相册调用，权限，拍照，选择照片等","登录页面-输入框，文本框，富文本，webview，单选复选按钮",
-                "日期选择器，时间选择器，区域选择器，弹框提示框","handler的消息传递。监听，回调，代理，事件，通知",
-                "service","broadcastReceiver","contentprovider",
-                "数据存储，读取，数据库，tmp，等","网络，数据解析，转模型。上传，下载，post，put，delete，get" +
-                "，upload，download，等","webview","贝塞尔曲线，动画","定位，蓝牙","打包","签名",
-                "反编译","三方"};
+        String[] titles = {
+                "总纲-列表应用，跳转，导航设置",
+                "计算器-布局-button点击，屏幕适配",
+                "图片浏览器-相册调用，权限，拍照，选择照片等",
+                "登录页面-输入框，文本框，富文本，webview，单选复选按钮",
+                "日期选择器，时间选择器，区域选择器，弹框提示框",
+                "handler的消息传递。监听，回调，代理，事件，通知",
+                "service",
+                "broadcastReceiver",
+                "contentprovider",
+                "数据存储，读取，数据库，tmp，等",
+                "网络，数据解析，转模型。上传，下载，post，put，delete，get" + "，upload，download，等",
+                "webview",
+                "贝塞尔曲线，动画",
+                "定位，蓝牙",
+                "打包",
+                "签名",
+                "反编译",
+                "三方"};
         // 构造一些数据
         for (int i = 0; i < titles.length; i++) {
             News news = new News();
@@ -92,8 +104,16 @@ public class MainActivity extends BaseActivity {
                                 LoginActivity.class);
                         startActivity(intent3);
                         break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this,
+                                TakePhoto.class));
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainActivity.this,
+                                HandlerTest.class);
+                        startActivity(intent5);
+                        break;
                 }
-
             }
         });
     }

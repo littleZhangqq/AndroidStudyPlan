@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    <style name="BottomPushPickerStyle">-->
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:windowAnimationStyle">@style/AnimBottom</item>-->
+<!--        <item name="android:backgroundDimEnabled">true</item>-->
+<!--        <item name="android:windowMinWidthMajor">@dimen/screen_width</item>-->
+<!--        <item name="android:windowMinWidthMinor">@dimen/screen_width</item>-->
+<!--    </style>-->
+
     <style name="BottomPushDialogStyle">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
@@ -17,7 +30,5 @@
         <!--下滑动画-->
         <item name="android:windowExitAnimation">@anim/bottom_push_out</item>
     </style>
-
-
 
 </resources>
