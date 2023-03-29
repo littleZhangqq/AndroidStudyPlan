@@ -29,6 +29,7 @@ import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 
 import Model.News;
+import Util.ServiceTest;
 
 
 public class MainActivity extends BaseActivity {
@@ -112,6 +113,11 @@ public class MainActivity extends BaseActivity {
                         Intent intent5 = new Intent(MainActivity.this,
                                 HandlerTest.class);
                         startActivity(intent5);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(MainActivity.this,
+                                ServiceActivity.class);
+                        startActivity(intent6);
                         break;
                 }
             }
