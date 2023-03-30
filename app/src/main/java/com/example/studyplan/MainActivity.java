@@ -119,6 +119,10 @@ public class MainActivity extends BaseActivity {
                                 ServiceActivity.class);
                         startActivity(intent6);
                         break;
+                    case 7:
+                        Intent intent7 = new Intent(MainActivity.this,
+                                BReceiveTest.class);
+                        startActivity(intent7);
                 }
             }
         });
