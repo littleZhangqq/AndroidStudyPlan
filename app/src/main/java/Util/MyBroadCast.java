@@ -13,6 +13,11 @@ public class MyBroadCast extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d("TAG", "onReceive:Message");
-        Toast.makeText(context, "自定义通知", Toast.LENGTH_LONG).show();
+
+        if (intent.getAction().equals("loginOther")){
+            Toast.makeText(context, "应用内自定义通知", Toast.LENGTH_LONG).show();
+        }else if (intent.getAction().equals("testBroadCast")){
+            Toast.makeText(context, "全局通知", Toast.LENGTH_LONG).show();
+        }
     }
 }

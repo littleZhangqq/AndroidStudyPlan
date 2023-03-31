@@ -1,6 +1,7 @@
 package com.example.studyplan;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -34,6 +35,24 @@ public class BReceiveTest extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("testBroadCast");
+                intent.putExtra("message","你妈喊你回家吃饭了");
+                sendBroadcast(intent);
+            }
+        });
+
+        MyBroadCast local = new MyBroadCast();
+        IntentFilter filter1 = new IntentFilter("loginOther");
+
+        LocalBroadcastManager manger = LocalBroadcastManager.getInstance(this);
+        manger.registerReceiver(local,filter1);
+
+        //发送自定义广播
+        TextView tv1 = this.findViewById(R.id.sendDefineBr);
+        tv1.setClickable(true);
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("loginOther");
                 intent.setPackage(getPackageName());
                 intent.putExtra("message","你妈喊你回家吃饭了");
                 sendBroadcast(intent);
