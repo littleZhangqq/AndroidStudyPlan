@@ -167,7 +167,12 @@
             android:layout_marginTop="550dp"
             android:background="@mipmap/accounticon"
             android:gravity="center" />
-
+        <FrameLayout
+            android:id="@+id/phonePrivacyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" />
     </RelativeLayout>
 
 </FrameLayout>

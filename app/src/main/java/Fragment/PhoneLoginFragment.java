@@ -89,7 +89,7 @@ public class PhoneLoginFragment extends Fragment{
         PrivacyLabelFragment privacy = new PrivacyLabelFragment();
         FragmentManager manager = getChildFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.phoneFragment,privacy);
+        transaction.add(R.id.phonePrivacyContainer,privacy);
         transaction.commit();
 
         TextView tv = view.findViewById(R.id.changeToAccountLogin);

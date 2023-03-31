@@ -155,7 +155,7 @@
             android:gravity="center" />
 
         <FrameLayout
-            android:name="Fragment.PrivacyLabelFragment"
+            android:id="@+id/accountPrivacyContainer"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

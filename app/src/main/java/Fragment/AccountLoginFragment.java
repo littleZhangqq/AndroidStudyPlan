@@ -85,7 +85,7 @@ public class AccountLoginFragment extends Fragment{
         PrivacyLabelFragment privacy = new PrivacyLabelFragment();
         FragmentManager manager = getChildFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.accountFragment,privacy);
+        transaction.add(R.id.accountPrivacyContainer,privacy);
         transaction.commit();
 
         TextView tv = view.findViewById(R.id.changeToPhoneLogin);
