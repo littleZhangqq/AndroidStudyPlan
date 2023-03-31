@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    tools:context="Fragment.PrivacyLabelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+
+        <CheckBox
+            android:id="@+id/privacyCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/privacyLabel"
+            android:layout_toStartOf="@+id/privacyLabel"
+            android:button="@drawable/selector"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/privacyLabel"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="登录即同意《软件服务协议》与《隐私政策》"
+            android:textColor="#6A6D77"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</FrameLayout>
