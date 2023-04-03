@@ -79,7 +79,8 @@ public class AccountLoginFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_account_login,container,
+        View view = inflater.inflate(R.layout.fragment_account_login,
+                container,
                 false);
 
         PrivacyLabelFragment privacy = new PrivacyLabelFragment();

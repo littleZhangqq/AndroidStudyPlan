@@ -27,6 +27,16 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/fragment',
+                    'src/main/res/layout',
+                    'src/main/res'
+            ]
+        }
+    }
+
 }
 
 dependencies {
